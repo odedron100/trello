@@ -1,0 +1,25 @@
+button {
+    border:0;
+    background-color:rgba(255, 255, 255, 0.769);
+    color:rgb(23, 5, 5);
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+// input{
+//     height: 40px;
+//     text-align: center;
+//     font-size: 18px;
+//     border-radius: 20px;
+//     border: none;
+//     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+//     outline: none;
+//     transition: box-shadow 0.3s;
+// }
+
+form > * {
+    display: block;
+    width: 200px;
+    margin: 10px 0px;
+}

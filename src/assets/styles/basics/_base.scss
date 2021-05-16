@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $clr1;
+    color: $clr6;
+}
+
+html {
+    font-family: "Macan","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.6;
+}
+
+button{
+    cursor: pointer;
+}
+
+body {
+    color: #62646a;
+    font-size: rem(18px);
+    margin: 0;
+}
+
+#app {
+    // padding-top: 90px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.6em;
+    line-height: 1;
+    color:$clr3;
+}
+
+ main, footer {
+    padding: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color:$clr3;
+}
+a:hover {
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+img{width:150px;}
+
+ul {padding: 0; list-style-type: none;}
