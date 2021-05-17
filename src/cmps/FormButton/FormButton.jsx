@@ -32,7 +32,7 @@ export const FormButton = (props) => {
         }
     });
 
-    const toggleListForm = () => {
+    const toggleItemForm = () => {
         console.log('current state:', isItemFormOpen);
         console.log('going to change to:', !isItemFormOpen);
         setIsItemFormOpen(!isItemFormOpen);
@@ -50,19 +50,26 @@ export const FormButton = (props) => {
         props.onSubmit(newItem);
         setNewItemInputValue('');
     }
-
+    const dynamicClass = props.itemType;
     return (
-        <div>
-            {isItemFormOpen ?
-                <section className="new-list-form" ref={formContainerRef}>
-                    <input autoFocus type="text" placeholder="Enter list title..." onChange={updateItemTitle} value={newItemInputValue}/>
-                    <footer>
-                        <button className="add-list trello-button" onClick={onSubmit}>{`Add ${props.itemType}`}</button>
-                        <button className="remove-list" onClick={toggleListForm}><i className="fas fa-times"></i></button>
-                    </footer>
-                </section>
-            :
-            <button ref={openFormButtonRef} className="create-list-button" onClick={toggleListForm}>+ Add a {props.itemType}</button>}
-        </div>
+        <section className="form-button-container">
+            <div className={dynamicClass}>
+                {isItemFormOpen ?
+                    <section className="new-item-form" ref={formContainerRef}>
+                     {dynamicClass === 'list' ?
+                        <input autoFocus type="text" placeholder="Enter item title..." onChange={updateItemTitle} value={newItemInputValue}/>
+                     :
+                        <textarea autoFocus type="text" placeholder="Enter item title..." onChange={updateItemTitle} value={newItemInputValue}/>}
+
+                        <footer>
+                            <button className="add-item trello-button" onClick={onSubmit}>{`Add ${props.itemType}`}</button>
+                            <button className="remove-item" onClick={toggleItemForm}><i className="fas fa-times"></i></button>
+                        </footer>
+                    </section>
+                :
+                    <button ref={openFormButtonRef} className="create-item-button" onClick={toggleItemForm}>+ Add a {props.itemType}</button>
+                }
+            </div>
+        </section>
     )
 }
