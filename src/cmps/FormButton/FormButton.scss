@@ -28,6 +28,9 @@
        margin-bottom: 7px;
      }
      footer{
+       .add-item{
+        margin-inline-end: 15px;
+      }
        .remove-list{
          margin-left: 15px;
          font-size: 25px;
@@ -60,6 +63,7 @@
       font-size: 18px;
       font-weight: 100;
       color: $clr7;
+
     }
     .new-item-form {
       display: flex;
@@ -76,10 +80,15 @@
         border:none;
         padding: 6px 8px 2px;
         margin-bottom: 10px;
+        border-radius: 3px;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
       }
       footer{
         width: 100%;
         width: 97%;
+        .add-item{
+          margin-inline-end: 15px;
+        }
       }
     }
   }

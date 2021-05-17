@@ -1,9 +1,18 @@
 import './List.scss'
+import { useEffect } from 'react';
 import {FormButton} from '../FormButton'
+import { useDispatch } from 'react-redux';
+import {saveList ,loadLists} from '../../store/actions/ListActions'
 
 export const List = ({list}) => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(loadLists())
+    }, []);
+
     const handleNewCardSubmit = (newCard) => {
-        console.log('newCard', newCard);
+        let listToSave = {...list,cards:[...list.cards,newCard.title]}
+        dispatch(saveList(listToSave))
     }
 
     return (
@@ -12,10 +21,11 @@ export const List = ({list}) => {
                 <div className="title">{list.title}</div>
                 <div className="helpers"><i className="fas fa-ellipsis-h"></i></div>
             </header>
-            {/* <button className="create-new-card">+ Add new card</button> */}
-            {list.cards.map((card) =>
-                <div className="card">{card}</div>
-            )}
+            <section className="cards">
+                {list.cards.map((card) =>
+                    <div className="card">{card}</div>
+                )}
+            </section>
             <FormButton itemType="card" onSubmit={handleNewCardSubmit} />
         </section>
     )
