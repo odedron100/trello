@@ -14,9 +14,10 @@ export const NewListButton = (props) => {
     const lists = useSelector(state => state.listReducer.lists)
     const [activeList,setActiveList] = useState(listService.getEmptyList())
     const dispatch = useDispatch();
+
     useEffect(() => {
         dispatch(loadLists())
-    }, [])
+    }, []);
 
       const handleDocumentClick = useCallback((e) => {
         if (e.target === openFormButtonRef.current) {

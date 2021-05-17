@@ -5,7 +5,7 @@ import { NewListButton } from '../NewListButton/NewListButton';
 export const ListsContainer = ({lists}) => {
     return (
         <section className="lists-container">
-            {lists.map((list) => <List list={list} key={list._id} />)}
+            {Object.keys(lists).map((listId) => <List list={lists[listId]} key={listId} />)}
             <NewListButton />
         </section>
     )

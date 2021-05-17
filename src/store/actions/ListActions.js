@@ -3,7 +3,7 @@ import { listService } from '../../services/list.service'
 // Thunk - Action Dispatcher
 export function loadLists(filterBy) {
   return async dispatch => {
-    const lists = await listService.query(filterBy)
+    const lists = await listService.query(filterBy);
     const action = {
       type: 'SET_LISTS',
       lists
@@ -18,6 +18,7 @@ export function getListById(listId) {
     dispatch({ type: 'SET_LIST', list })
   }
 }
+
 export function saveList(list) {
   return async dispatch => {
     console.log('list', list);
