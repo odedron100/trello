@@ -1,0 +1,42 @@
+.check-list-modal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  padding: 5px 20px;
+  width: 330px;
+  height: 220px;
+  color: #5e6c84;
+  position: absolute;
+  right: -116px;
+  top: 156px;
+  .header{
+    text-align: center;
+    border-bottom: 1px solid rgba(9,30,66,.13);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  label{
+    font-weight: 700;
+    color: #5e6c84;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    display: block;
+  }
+  input{
+    margin: 4px 0 12px;
+    width: 100%;
+    padding: 10px 8px;
+    outline: none;
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    background-color: #fafbfc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .add{
+    padding: 10px 7px;
+  }
+}

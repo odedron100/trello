@@ -1,0 +1,430 @@
+3/11/2021, 2:01:25 PM - INFO - Server is running on port: 3030 | 15 | popo 
+3/11/2021, 2:10:02 PM - INFO - Server is running on port: 3030 | 15 | popo 
+3/11/2021, 2:10:29 PM - INFO - Server is running on port: 3030 | 15 | popo 
+3/11/2021, 2:11:22 PM - INFO - Server is running on port: 3030 | 15 | popo 
+3/14/2021, 10:49:43 AM - INFO - Server is running on port: 3030 | 15 | popo 
+3/14/2021, 10:53:51 AM - INFO - Server is running on port: 3030 | 15 | popo 
+3/14/2021, 10:56:45 AM - INFO - Server is running on port: 3030 | 15 | popo 
+3/14/2021, 10:58:40 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:03:22 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:03:56 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:04:47 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:11:41 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:12:55 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:15:47 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:16:38 AM - INFO - Server is running on port: 3030 
+3/14/2021, 11:33:14 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:34:02 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:34:14 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:34:31 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:34:49 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:35:27 AM - ERROR - Failed to get user | {} (sid: hC0N0q2CMazmohy7U_Pm0mO-WUjNs_KH)
+3/14/2021, 11:36:20 AM - DEBUG - auth.service - login with username: user1 (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:36:20 AM - ERROR - Failed to Login Invalid username or password (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:37:33 AM - DEBUG - auth.service - signup with username: babush, fullname: Babush (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:37:33 AM - DEBUG - auth.route - new account created: {"username":"babush","password":"$2b$10$S8RNh7z.rh/jXfP3spEXy.pJY3ZpP/uhNvfjoykltSLQyt2dRmmba","fullname":"Babush","score":0,"_id":"604dd95d4269f61c0827a34f"} (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:37:33 AM - DEBUG - auth.service - login with username: babush (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:37:58 AM - INFO - Req from: Babush (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:40:32 AM - INFO - Req from: Babush (sid: Igdb0xoY_L-d51_85oI_2fPP9klehiyh)
+3/14/2021, 11:42:27 AM - DEBUG - auth.service - login with username: xsd (sid: piWrex37_bog1JCVC67j0dO7BjeI0huZ)
+3/14/2021, 11:42:27 AM - ERROR - Failed to Login Invalid username or password (sid: piWrex37_bog1JCVC67j0dO7BjeI0huZ)
+3/14/2021, 7:23:10 PM - INFO - Server is running on port: 3030 
+3/14/2021, 7:40:20 PM - INFO - Server is running on port: 3030 
+3/14/2021, 7:41:32 PM - INFO - Server is running on port: 3030 
+3/14/2021, 7:54:59 PM - DEBUG - auth.service - login with username: user1 (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:55:23 PM - DEBUG - auth.service - login with username: admin (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:55:30 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:55:54 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:57:29 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:58:16 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:58:21 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:58:40 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:58:46 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 7:59:31 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:00:04 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:00:33 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:05:11 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:05:27 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:05:41 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:07:17 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:07:35 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:07:42 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:09:26 PM - DEBUG - Shouldnt happen, No socket in map | {} (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:11:32 PM - INFO - Req from: Master Adminov (sid: OpS1a2Q6Sjka3ynSlyMJcSXtkENVh9BO)
+3/14/2021, 8:12:53 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:18:48 PM - DEBUG - auth.service - login with username: user1 (sid: 3G8I8AppeJ_MKovbIzPxUkdGJ3N10uko)
+3/14/2021, 9:18:56 PM - DEBUG - auth.service - login with username: admin (sid: 3G8I8AppeJ_MKovbIzPxUkdGJ3N10uko)
+3/14/2021, 9:20:13 PM - DEBUG - auth.service - login with username: user1 (sid: 9QLgskceVyPBIGLgXpahjc9n0Gb_GrWo)
+3/14/2021, 9:20:28 PM - DEBUG - auth.service - login with username: admin (sid: TZ1F5czKaW8JakEi_wx8dkARgAp2RIf3)
+3/14/2021, 9:20:57 PM - INFO - Req from: Master Adminov (sid: TZ1F5czKaW8JakEi_wx8dkARgAp2RIf3)
+3/14/2021, 9:21:00 PM - INFO - Req from: Master Adminov (sid: TZ1F5czKaW8JakEi_wx8dkARgAp2RIf3)
+3/14/2021, 9:21:07 PM - ERROR - Failed to add review | {} (sid: TZ1F5czKaW8JakEi_wx8dkARgAp2RIf3)
+3/14/2021, 9:21:56 PM - ERROR - Failed to add review | {} (sid: TZ1F5czKaW8JakEi_wx8dkARgAp2RIf3)
+3/14/2021, 9:23:20 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:24:05 PM - DEBUG - auth.service - login with username: user1 (sid: _9TkVNhzOZZwFRqxA9XXcsxB5KgANTPQ)
+3/14/2021, 9:24:09 PM - INFO - Req from: Puki Normativi? (sid: _9TkVNhzOZZwFRqxA9XXcsxB5KgANTPQ)
+3/14/2021, 9:24:24 PM - ERROR - Failed to add review | {} (sid: _9TkVNhzOZZwFRqxA9XXcsxB5KgANTPQ)
+3/14/2021, 9:26:31 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:26:45 PM - DEBUG - auth.service - login with username: user1 (sid: veJ5BiXawh6oD22Id5ymSMxzVt8tIs1j)
+3/14/2021, 9:26:51 PM - INFO - Req from: Puki Normativi? (sid: veJ5BiXawh6oD22Id5ymSMxzVt8tIs1j)
+3/14/2021, 9:31:37 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:31:55 PM - DEBUG - auth.service - login with username: user1 (sid: Fz_GlNVfbgC25OBQpYw6yt0UCVi_7oRV)
+3/14/2021, 9:31:56 PM - INFO - Req from: Puki Normativi? (sid: Fz_GlNVfbgC25OBQpYw6yt0UCVi_7oRV)
+3/14/2021, 9:32:05 PM - ERROR - Failed to add review | TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Namespace'
+    |     property 'server' -> object with constructor 'Server'
+    |     property 'nsps' -> object with constructor 'Object'
+    --- property '/' closes the circle (sid: Fz_GlNVfbgC25OBQpYw6yt0UCVi_7oRV)
+3/14/2021, 9:33:11 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:33:33 PM - DEBUG - auth.service - login with username: user1 (sid: fAkwXZNi4lRKFyfIMp7BDMcYagfIa_zq)
+3/14/2021, 9:33:37 PM - INFO - Req from: Puki Normativi? (sid: fAkwXZNi4lRKFyfIMp7BDMcYagfIa_zq)
+3/14/2021, 9:33:54 PM - ERROR - Failed to add review | TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Namespace'
+    |     property 'server' -> object with constructor 'Server'
+    |     property 'nsps' -> object with constructor 'Object'
+    --- property '/' closes the circle (sid: fAkwXZNi4lRKFyfIMp7BDMcYagfIa_zq)
+3/14/2021, 9:34:56 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:35:12 PM - DEBUG - auth.service - login with username: user1 (sid: R92orhlMPoXtf8-vDvmP89leEYQ3ypZ7)
+3/14/2021, 9:35:14 PM - INFO - Req from: Puki Normativi? (sid: R92orhlMPoXtf8-vDvmP89leEYQ3ypZ7)
+3/14/2021, 9:35:20 PM - DEBUG - Shouldnt happen, No socket in map (sid: R92orhlMPoXtf8-vDvmP89leEYQ3ypZ7)
+3/14/2021, 9:36:31 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:38:23 PM - DEBUG - auth.service - login with username: user1 (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:38:25 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:38:34 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:39:39 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:39:39 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:41:24 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:41:24 PM - INFO - Req from: Puki Normativi? (sid: xvxHwY3LqwA-vs5nzj3DBmfug8Es1PD-)
+3/14/2021, 9:42:53 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:44:30 PM - DEBUG - auth.service - login with username: user1 (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:44:32 PM - INFO - Req from: Puki Normativi? (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:44:40 PM - DEBUG - Shouldnt happen, No socket in map (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:45:09 PM - INFO - Req from: Puki Normativi? (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:46:22 PM - INFO - Req from: Puki Normativi? (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:48:37 PM - INFO - Req from: Puki Normativi? (sid: lQ-xoGawEarPmOEf6oPmh2eGmHsvhTwh)
+3/14/2021, 9:48:49 PM - DEBUG - auth.service - login with username: user1 (sid: YCUsPhVXSFWAnOuOvIK4LDhar_FopV5L)
+3/14/2021, 9:48:57 PM - INFO - Req from: Puki Normativi? (sid: YCUsPhVXSFWAnOuOvIK4LDhar_FopV5L)
+3/14/2021, 9:49:13 PM - DEBUG - Shouldnt happen, No socket in map (sid: YCUsPhVXSFWAnOuOvIK4LDhar_FopV5L)
+3/14/2021, 9:52:14 PM - INFO - Req from: Puki Normativi? (sid: YCUsPhVXSFWAnOuOvIK4LDhar_FopV5L)
+3/14/2021, 9:54:30 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:54:34 PM - INFO - Server is running on port: 3030 
+3/14/2021, 9:58:24 PM - DEBUG - auth.service - login with username: user1 (sid: woPga_au5KoatUIa-qKbDv30ar03ynIM)
+3/14/2021, 9:58:26 PM - INFO - Req from: Puki Normativi? (sid: woPga_au5KoatUIa-qKbDv30ar03ynIM)
+3/14/2021, 10:00:01 PM - DEBUG - auth.service - login with username: user1 (sid: 7ZcT4JRrAJy6rtacPnRSybhTYlRJCFlX)
+3/14/2021, 10:00:05 PM - INFO - Req from: Puki Normativi? (sid: 7ZcT4JRrAJy6rtacPnRSybhTYlRJCFlX)
+3/14/2021, 10:01:16 PM - INFO - Req from: Puki Normativi? (sid: 7ZcT4JRrAJy6rtacPnRSybhTYlRJCFlX)
+3/14/2021, 10:01:32 PM - INFO - Req from: Puki Normativi? (sid: 7ZcT4JRrAJy6rtacPnRSybhTYlRJCFlX)
+3/14/2021, 10:03:43 PM - INFO - Req from: Puki Normativi? (sid: 7ZcT4JRrAJy6rtacPnRSybhTYlRJCFlX)
+3/14/2021, 10:03:50 PM - DEBUG - auth.service - login with username: user1 (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:03:54 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:04:04 PM - DEBUG - Shouldnt happen, No socket in map (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:04:24 PM - DEBUG - Shouldnt happen, No socket in map (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:05:03 PM - DEBUG - Shouldnt happen, No socket in map (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:05:20 PM - DEBUG - Shouldnt happen, No socket in map (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:09:08 PM - DEBUG - auth.service - login with username: admin (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:09:12 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:12:24 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:13:57 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:13:57 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:16:29 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:16:29 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:19:40 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:19:40 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:19:53 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:19:53 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:22:13 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:22:14 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:22:34 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:22:34 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:23:29 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:23:29 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:23:44 PM - INFO - Req from: Puki Normativi? (sid: l8-LOvkUQtyBP9WJp0AXcDrOU-SlhxkP)
+3/14/2021, 10:23:45 PM - INFO - Req from: Master Adminov (sid: VdElleIzBpRpgrrQ6JftiQKRLkNEZe-l)
+3/14/2021, 10:25:16 PM - INFO - Server is running on port: 3030 
+3/14/2021, 10:28:08 PM - DEBUG - auth.service - login with username: admin (sid: nDE8hNuNkLr3cZjuaLQFLz6A12LB7CcZ)
+3/14/2021, 10:28:25 PM - DEBUG - auth.service - login with username: user1 (sid: 0kwT0cjlXvaZGTYvCAMZ2tRIJvFGtBuG)
+3/14/2021, 10:28:33 PM - INFO - Req from: Puki Normativi? (sid: 0kwT0cjlXvaZGTYvCAMZ2tRIJvFGtBuG)
+3/14/2021, 10:28:59 PM - INFO - Req from: Puki Normativi? (sid: 0kwT0cjlXvaZGTYvCAMZ2tRIJvFGtBuG)
+3/14/2021, 10:30:24 PM - INFO - Req from: Master Adminov (sid: nDE8hNuNkLr3cZjuaLQFLz6A12LB7CcZ)
+3/14/2021, 10:30:30 PM - DEBUG - Shouldnt happen, No socket in map (sid: nDE8hNuNkLr3cZjuaLQFLz6A12LB7CcZ)
+3/14/2021, 10:30:45 PM - INFO - Req from: Puki Normativi? (sid: 0kwT0cjlXvaZGTYvCAMZ2tRIJvFGtBuG)
+3/14/2021, 10:34:20 PM - INFO - Server is running on port: 3030 
+3/14/2021, 10:34:24 PM - INFO - Server is running on port: 3030 
+3/14/2021, 10:34:47 PM - INFO - Server is running on port: 3030 
+3/14/2021, 10:35:06 PM - DEBUG - auth.service - login with username: admin (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 10:35:09 PM - DEBUG - auth.service - login with username: user1 (sid: gkNYKgDVvHOPMhV0lF3Ly1g5UQ4VFEyC)
+3/14/2021, 10:35:23 PM - INFO - Req from: Puki Normativi? (sid: gkNYKgDVvHOPMhV0lF3Ly1g5UQ4VFEyC)
+3/14/2021, 10:35:42 PM - INFO - Req from: Master Adminov (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 10:35:49 PM - DEBUG - Shouldnt happen, No socket in map (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 10:39:09 PM - INFO - Req from: Master Adminov (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 11:27:55 PM - INFO - Req from: Master Adminov (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 11:28:10 PM - INFO - Req from: Master Adminov (sid: TVn-Wg-QrOzbGIc24ROv2_58MKe3SDF-)
+3/14/2021, 11:31:09 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:31:32 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:31:56 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:33:19 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:33:40 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:34:38 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:34:40 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:35:10 PM - DEBUG - auth.service - login with username: user1 (sid: IknVUqCgSqLH6eliDt9z1WD5ThoKKfMu)
+3/14/2021, 11:35:13 PM - INFO - Req from: Puki Normativi? (sid: IknVUqCgSqLH6eliDt9z1WD5ThoKKfMu)
+3/14/2021, 11:35:34 PM - DEBUG - auth.service - login with username: admin (sid: kbSYfbYQgGOCIaX1535fuGBCpVsWlgNn)
+3/14/2021, 11:35:45 PM - INFO - Req from: Master Adminov (sid: kbSYfbYQgGOCIaX1535fuGBCpVsWlgNn)
+3/14/2021, 11:36:32 PM - INFO - Req from: Master Adminov (sid: kbSYfbYQgGOCIaX1535fuGBCpVsWlgNn)
+3/14/2021, 11:36:49 PM - INFO - Req from: Puki Normativi? (sid: IknVUqCgSqLH6eliDt9z1WD5ThoKKfMu)
+3/14/2021, 11:36:57 PM - INFO - Req from: Puki Normativi? (sid: IknVUqCgSqLH6eliDt9z1WD5ThoKKfMu)
+3/14/2021, 11:37:12 PM - DEBUG - auth.service - login with username: admin (sid: 1vZk5tmQYI4rKqcmmlyKxGU20Uexiw9M)
+3/14/2021, 11:37:17 PM - DEBUG - auth.service - login with username: puki (sid: c9-Rk2loCY4wUEUbPLVxl24Pb1HoCY_K)
+3/14/2021, 11:37:17 PM - ERROR - Failed to Login Invalid username or password (sid: c9-Rk2loCY4wUEUbPLVxl24Pb1HoCY_K)
+3/14/2021, 11:37:30 PM - DEBUG - auth.service - login with username: user1 (sid: c9-Rk2loCY4wUEUbPLVxl24Pb1HoCY_K)
+3/14/2021, 11:38:02 PM - INFO - Req from: Puki Normativi? (sid: c9-Rk2loCY4wUEUbPLVxl24Pb1HoCY_K)
+3/14/2021, 11:38:12 PM - INFO - Req from: Master Adminov (sid: 1vZk5tmQYI4rKqcmmlyKxGU20Uexiw9M)
+3/14/2021, 11:40:34 PM - INFO - Req from: Puki Normativi? (sid: c9-Rk2loCY4wUEUbPLVxl24Pb1HoCY_K)
+3/14/2021, 11:41:48 PM - INFO - Server is running on port: 3030 
+3/14/2021, 11:41:56 PM - DEBUG - auth.service - login with username: user1 (sid: W25FDt0kUYYNIB9ftf0bpefHZPb9k5ec)
+3/14/2021, 11:42:00 PM - INFO - Req from: Puki Normativi? (sid: W25FDt0kUYYNIB9ftf0bpefHZPb9k5ec)
+3/14/2021, 11:42:04 PM - DEBUG - Shouldnt happen, No socket in map (sid: W25FDt0kUYYNIB9ftf0bpefHZPb9k5ec)
+3/14/2021, 11:42:04 PM - ERROR - Failed to add review | ReferenceError: fafa is not defined (sid: W25FDt0kUYYNIB9ftf0bpefHZPb9k5ec)
+3/14/2021, 11:43:34 PM - DEBUG - auth.service - login with username: user1s (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:43:34 PM - ERROR - Failed to Login Invalid username or password (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:45:26 PM - DEBUG - auth.service - login with username: user1w (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:45:26 PM - ERROR - Failed to Login Invalid username or password (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:46:15 PM - DEBUG - auth.service - login with username: user1s (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:46:15 PM - ERROR - Failed to Login Invalid username or password (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:46:34 PM - DEBUG - auth.service - login with username: user1s (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:46:34 PM - ERROR - Failed to Login Invalid username or password (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:47:48 PM - DEBUG - auth.service - login with username: user1sa (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:47:48 PM - ERROR - Failed to Login Invalid username or password (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:47:58 PM - DEBUG - auth.service - login with username: user1 (sid: V-emJnaxfpG3Ff4bvyoy4NAjIO0gHt3I)
+3/14/2021, 11:48:03 PM - DEBUG - auth.service - login with username: user1s (sid: UZmZPVIJ3gbHuVHvCaEgOOzvkzO6RZkt)
+3/14/2021, 11:48:03 PM - ERROR - Failed to Login Invalid username or password (sid: UZmZPVIJ3gbHuVHvCaEgOOzvkzO6RZkt)
+3/14/2021, 11:49:41 PM - DEBUG - auth.service - login with username: user1csd (sid: UZmZPVIJ3gbHuVHvCaEgOOzvkzO6RZkt)
+3/14/2021, 11:49:41 PM - ERROR - Failed to Login Invalid username or password (sid: UZmZPVIJ3gbHuVHvCaEgOOzvkzO6RZkt)
+3/14/2021, 11:53:42 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:04:11 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:07:16 PM - DEBUG - auth.service - login with username: user1 (sid: 3BPbMtLQe946JtY4jkGTdsm40xn0gH8M)
+3/15/2021, 12:07:17 PM - INFO - Req from: Puki Normativi? (sid: 3BPbMtLQe946JtY4jkGTdsm40xn0gH8M)
+3/15/2021, 12:07:30 PM - ERROR - Failed to add review | ReferenceError: fafa is not defined (sid: 3BPbMtLQe946JtY4jkGTdsm40xn0gH8M)
+3/15/2021, 12:08:30 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:08:46 PM - DEBUG - auth.service - login with username: user1 (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:08:52 PM - INFO - Req from: Puki Normativi? (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:09:08 PM - DEBUG - Shouldnt happen, No socket in map (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:09:44 PM - DEBUG - Shouldnt happen, No socket in map (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:10:14 PM - DEBUG - Shouldnt happen, No socket in map (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:11:47 PM - INFO - Req from: Puki Normativi? (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:12:16 PM - INFO - Req from: Puki Normativi? (sid: 6yiyuhQpr8p_FGYlpyaKiS8VsrAF8yVM)
+3/15/2021, 12:15:02 PM - DEBUG - auth.service - login with username: user1 (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:15:05 PM - INFO - Req from: Puki Normativi? (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:15:09 PM - DEBUG - Shouldnt happen, No socket in map (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:16:38 PM - INFO - Req from: Puki Normativi? (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:18:59 PM - INFO - Req from: Puki Normativi? (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:19:43 PM - INFO - Req from: Puki Normativi? (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:19:56 PM - INFO - Req from: Puki Normativi? (sid: FWMgqwi6rBxlwotQVxsQ1AAfSOqGeDON)
+3/15/2021, 12:23:20 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:23:33 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:27:57 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:32:31 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:33:10 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:36:13 PM - DEBUG - auth.service - login with username: user1 (sid: K0TmS2tzZVKeFW_f59ulwzLdZ0aSqpPP)
+3/15/2021, 12:36:18 PM - INFO - Req from: Puki Normativi? (sid: K0TmS2tzZVKeFW_f59ulwzLdZ0aSqpPP)
+3/15/2021, 12:36:24 PM - DEBUG - Shouldnt happen, No socket in map (sid: K0TmS2tzZVKeFW_f59ulwzLdZ0aSqpPP)
+3/15/2021, 12:44:29 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:44:55 PM - DEBUG - auth.service - login with username: user1 (sid: mJhywa2xTdliHSL_U0qSDn2vUecqAm_7)
+3/15/2021, 12:44:57 PM - INFO - Req from: Puki Normativi? (sid: mJhywa2xTdliHSL_U0qSDn2vUecqAm_7)
+3/15/2021, 12:46:01 PM - INFO - Req from: Puki Normativi? (sid: mJhywa2xTdliHSL_U0qSDn2vUecqAm_7)
+3/15/2021, 12:46:32 PM - INFO - Req from: Puki Normativi? (sid: mJhywa2xTdliHSL_U0qSDn2vUecqAm_7)
+3/15/2021, 12:47:31 PM - INFO - Server is running on port: 3030 
+3/15/2021, 12:47:39 PM - DEBUG - auth.service - login with username: user1 (sid: ek2_lQvs2Pb-E_Ck6bGJvHR4OB0jrGJJ)
+3/15/2021, 12:47:43 PM - INFO - Req from: Puki Normativi? (sid: ek2_lQvs2Pb-E_Ck6bGJvHR4OB0jrGJJ)
+3/15/2021, 12:47:47 PM - DEBUG - Shouldnt happen, No socket in map (sid: ek2_lQvs2Pb-E_Ck6bGJvHR4OB0jrGJJ)
+3/15/2021, 7:57:58 PM - INFO - Req from: Puki Normativi? (sid: ek2_lQvs2Pb-E_Ck6bGJvHR4OB0jrGJJ)
+3/15/2021, 7:58:06 PM - INFO - Req from: Puki Normativi? (sid: ek2_lQvs2Pb-E_Ck6bGJvHR4OB0jrGJJ)
+3/15/2021, 7:58:19 PM - DEBUG - auth.service - login with username: user1 (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 7:58:25 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 7:58:28 PM - DEBUG - Shouldnt happen, No socket in map (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 7:59:47 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:00:35 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:02:04 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:03:02 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:04:05 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:04:34 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:04:56 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:05:39 PM - INFO - Req from: Puki Normativi? (sid: xxuHQHTfx9ETFpY5y4H25yL2YJ6z65DW)
+3/15/2021, 8:07:04 PM - INFO - Server is running on port: 3030 
+3/15/2021, 8:15:57 PM - DEBUG - auth.service - login with username: user1 (sid: xhSyB2MXyIv2HTOcyTwlQUnNp-piMZmW)
+3/15/2021, 8:15:59 PM - INFO - Req from: Puki Normativi? (sid: xhSyB2MXyIv2HTOcyTwlQUnNp-piMZmW)
+3/15/2021, 8:16:25 PM - INFO - Req from: Puki Normativi? (sid: xhSyB2MXyIv2HTOcyTwlQUnNp-piMZmW)
+3/15/2021, 8:16:30 PM - DEBUG - Shouldnt happen, No socket in map (sid: xhSyB2MXyIv2HTOcyTwlQUnNp-piMZmW)
+3/15/2021, 8:17:34 PM - INFO - Server is running on port: 3030 
+3/15/2021, 8:17:41 PM - DEBUG - auth.service - login with username: user1 (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:17:44 PM - INFO - Req from: Puki Normativi? (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:17:54 PM - DEBUG - Shouldnt happen, No socket in map (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:18:03 PM - DEBUG - Shouldnt happen, No socket in map (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:18:14 PM - DEBUG - Shouldnt happen, No socket in map (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:18:33 PM - INFO - Req from: Puki Normativi? (sid: iOSf0U6aJbLjjTRynw5zhQAAwjwmc0Ho)
+3/15/2021, 8:18:46 PM - DEBUG - auth.service - login with username: user1 (sid: gg0zjgIe4IUFlNyKCZxfbewMV5hMqkGt)
+3/15/2021, 8:18:47 PM - INFO - Req from: Puki Normativi? (sid: gg0zjgIe4IUFlNyKCZxfbewMV5hMqkGt)
+3/15/2021, 8:18:53 PM - DEBUG - Shouldnt happen, No socket in map (sid: gg0zjgIe4IUFlNyKCZxfbewMV5hMqkGt)
+3/15/2021, 8:19:36 PM - INFO - Server is running on port: 3030 
+3/15/2021, 8:20:10 PM - INFO - Server is running on port: 3030 
+3/15/2021, 8:20:39 PM - INFO - Server is running on port: 3030 
+3/15/2021, 9:45:43 PM - INFO - Server is running on port: 3030 
+3/15/2021, 9:46:14 PM - DEBUG - auth.service - login with username: user1 (sid: 8zWvZkttsHs1jGlTeabGZviDIxRBk823)
+3/15/2021, 9:46:20 PM - INFO - Req from: Puki Normativi? (sid: 8zWvZkttsHs1jGlTeabGZviDIxRBk823)
+3/15/2021, 9:46:24 PM - DEBUG - Shouldnt happen, No socket in map (sid: 8zWvZkttsHs1jGlTeabGZviDIxRBk823)
+3/15/2021, 9:46:44 PM - INFO - Server is running on port: 3030 
+3/15/2021, 9:47:36 PM - DEBUG - auth.service - login with username: user1 (sid: 0u-8i2883PNKCaERyjHyZ-kND3V3cgGO)
+3/15/2021, 9:47:42 PM - INFO - Req from: Puki Normativi? (sid: 0u-8i2883PNKCaERyjHyZ-kND3V3cgGO)
+3/15/2021, 9:48:02 PM - INFO - Req from: Puki Normativi? (sid: 0u-8i2883PNKCaERyjHyZ-kND3V3cgGO)
+3/15/2021, 9:48:21 PM - INFO - Req from: Puki Normativi? (sid: 0u-8i2883PNKCaERyjHyZ-kND3V3cgGO)
+3/16/2021, 8:16:09 AM - INFO - Server is running on port: 3030 
+3/16/2021, 10:48:12 AM - INFO - Server is running on port: 3030 
+3/16/2021, 11:12:08 AM - INFO - Server is running on port: 3030 
+3/16/2021, 11:16:08 AM - INFO - Server is running on port: 3030 
+3/16/2021, 11:29:46 AM - INFO - Server is running on port: 3030 
+5/18/2021, 2:54:31 PM - INFO - Server is running on port: 3030 
+5/18/2021, 2:54:34 PM - INFO - Server is running on port: 3030 
+5/18/2021, 2:58:56 PM - INFO - Server is running on port: 3030 
+5/18/2021, 3:07:47 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:02:16 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:02:22 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:02:35 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:03:26 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:11:46 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:12:12 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:12:46 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:12:46 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:13:18 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:15:08 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:15:09 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:15:13 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:15:15 PM - ERROR - Failed to get lists | ReferenceError: list is not defined (sid: NQrkR04ejAqpA_jdnvZZZGVcGubNPbOO)
+5/18/2021, 6:16:02 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:16:18 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:16:46 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:17:22 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:18:29 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:19:53 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:19:57 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:00 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:03 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:23 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:26 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:28 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:42 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:20:47 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:21:48 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:21:52 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:21:57 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:22:10 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:24:02 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:26:13 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:26:22 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:26:25 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:26:44 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:28:37 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:29:24 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:29:35 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:29:44 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:31:28 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:33:23 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:34:44 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:46:51 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:47:56 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:54:44 PM - INFO - Server is running on port: 3030 
+5/18/2021, 6:59:40 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:00:45 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:01:49 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:01:59 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:02:07 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:04:02 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:04:19 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:04:29 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:04:33 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:05:57 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: J8B6XUyh46lMCWhX2TVBsS_akshpFNP1)
+5/18/2021, 7:06:06 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: J8B6XUyh46lMCWhX2TVBsS_akshpFNP1)
+5/18/2021, 7:06:50 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: J8B6XUyh46lMCWhX2TVBsS_akshpFNP1)
+5/18/2021, 7:07:22 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:07:25 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: IVyFnzMa0J5YbfYPsADqmcWJyeYpbT_8)
+5/18/2021, 7:07:39 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:08:19 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:08:33 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:08:36 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: MOcFdchfBXxu0CgIPc3u48H2FIjzrvOZ)
+5/18/2021, 7:08:50 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:08:53 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: q9ABpb_g-AGXhyVU8GAuD-E8BS-vJ7lO)
+5/18/2021, 7:09:28 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:09:30 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: tsjjLQSc34kXixJEO9OxwjbFyIYspvRL)
+5/18/2021, 7:10:05 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:10:07 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:10:12 PM - ERROR - Failed to add list | TypeError: Cannot read property '_id' of undefined (sid: 1ruA_nCuFGDerPkggKJiBFIqW8-wV1Ur)
+5/18/2021, 7:13:08 PM - INFO - Server is running on port: 3030 
+5/18/2021, 7:13:21 PM - INFO - Server is running on port: 3030 
+5/18/2021, 10:11:24 PM - INFO - Server is running on port: 3030 
+5/19/2021, 2:34:19 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:28:44 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:29:25 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:30:55 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:31:10 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:31:35 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:31:55 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:32:13 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:36:47 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:36:49 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:36:53 PM - INFO - Server is running on port: 3030 
+5/19/2021, 6:37:18 PM - INFO - Server is running on port: 3030 
+5/20/2021, 1:02:11 PM - INFO - Server is running on port: 3030 
+5/22/2021, 1:56:47 PM - INFO - Server is running on port: 3030 
+5/23/2021, 12:49:35 PM - INFO - Server is running on port: 3030 
+5/23/2021, 12:50:20 PM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: ZX7hlVgeXoPcNTxh_nqIwOJMbn1zc0vX)
+5/23/2021, 12:51:08 PM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: ZX7hlVgeXoPcNTxh_nqIwOJMbn1zc0vX)
+5/23/2021, 12:51:29 PM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: ZX7hlVgeXoPcNTxh_nqIwOJMbn1zc0vX)
+5/23/2021, 12:51:36 PM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: ZX7hlVgeXoPcNTxh_nqIwOJMbn1zc0vX)
+5/23/2021, 12:51:50 PM - INFO - Server is running on port: 3030 
+5/23/2021, 1:20:10 PM - INFO - Server is running on port: 3030 
+5/23/2021, 1:24:17 PM - INFO - Server is running on port: 3030 
+5/23/2021, 11:19:35 PM - INFO - Server is running on port: 3030 
+5/23/2021, 11:20:05 PM - INFO - Server is running on port: 3030 
+5/24/2021, 11:19:34 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:19:37 AM - ERROR - Failed to get lists | TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle (sid: mPudENjD_y-pVyvI371kt7Aboa9pFw5a)
+5/24/2021, 11:19:51 AM - ERROR - Failed to get lists | TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle (sid: mPudENjD_y-pVyvI371kt7Aboa9pFw5a)
+5/24/2021, 11:19:57 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:27:07 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:27:10 AM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: UIefEUfsV7xNfqTSFGb893t8f78tR6dc)
+5/24/2021, 11:28:01 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:28:04 AM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: vN-Fl07tNYw3P1vfDt8UPidbFGrwP73L)
+5/24/2021, 11:28:22 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:28:27 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:28:29 AM - ERROR - Failed to get lists | TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle (sid: pDfPI6KxawEStdOnffeWvNVqBu-JIvTd)
+5/24/2021, 11:28:39 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:35:54 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:35:57 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:36:28 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:36:42 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:36:43 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:38:24 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:38:44 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:38:46 AM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: PlJlqoUtcngqrFrfUkE_XQi8j233XLDH)
+5/24/2021, 11:38:51 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:44:46 AM - INFO - Server is running on port: 3030 
+5/24/2021, 11:48:25 AM - INFO - Server is running on port: 3030 
+5/24/2021, 1:20:52 PM - INFO - Server is running on port: 3030 
+5/25/2021, 12:13:59 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:14:54 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:16:07 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:16:49 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:16:51 AM - ERROR - Failed to get lists | ReferenceError: logger is not defined (sid: VRNAYtSEHqpSCcOKJT32hyeqbSwG8QbX)
+5/25/2021, 12:17:35 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:18:11 AM - INFO - Server is running on port: 3030 
+5/25/2021, 12:18:19 AM - INFO - Server is running on port: 3030 

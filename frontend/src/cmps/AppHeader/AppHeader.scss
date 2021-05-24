@@ -1,0 +1,53 @@
+.app-header {
+  height: 100px;
+  text-align: center;
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .filter{
+      display: flex;
+      align-items: center;
+      width: 40%;
+      .input-container{
+        margin: 0;
+        .search{
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 3px;
+          border: none;
+          box-shadow: none;
+          box-sizing: border-box;
+          color: rgba(255, 255, 255, 0.5);
+          float: left;
+          font-size: 14px;
+          height: 32px;
+          line-height: 19px;
+          margin: 0;
+          outline: none;
+          padding-left: 8px;
+          padding-right: 30px;
+          transition: width 150ms;
+          width: 184px;
+        }
+      }
+    }
+    .logo{
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+      background-color: unset;
+      font-size: 21px;
+      font-weight: 700;
+      color: #efeaea99;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    .logo:hover{
+      color: white;
+    }
+    .helpers{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 40%;
+    }
+  }
+}
