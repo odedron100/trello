@@ -2,15 +2,16 @@ import { useRef,useEffect,useCallback, useState } from 'react';
 import {saveList} from '../../store/actions/ListActions';
 import './CardModal.scss';
 import { useDispatch,useSelector } from 'react-redux';
-import { LabelsModal } from '../LabelsModal';
-import { CheckListModal } from '../CheckListModal/CheckListModal';
 import { utilService } from '../../services/util.service';
+import { CardListChange } from '../CardListChange/CardListChange';
+import { CardDescription } from '../CardDescription/CardDescription';
+import {CheckLists} from '../CheckLists/CheckLists';
+import { CardSideBar } from '../CardSideBar/CardSideBar';
 
 export const CardModal = (props) => {
     const dispatch = useDispatch();
     const cardModalContaiinerRef = useRef(null);
     const cardModalRef = useRef(null);
-    const sideBarModalRef = useRef(null);
     const [cardToSave,setCardToSave] = useState(props.card);
     const [newTaskTitleToAdd,setNewTaskTitleToAdd] = useState(null)
     const [whichSideBarModalOpen,setWhichSideBarModalOpen] = useState('');
@@ -47,25 +48,10 @@ export const CardModal = (props) => {
             setCardToSave({...cardToSave, [type]: value})
     }
 
-
     const updateCard = (e,cardToSave) => {
         const newList = {...props.list};
         const cards = newList.cards;
         cards[cardToSave.id] = cardToSave
-        dispatch(saveList(newList))
-    }
-
-    const openSideBarModal = (e,value) => {
-        setWhichSideBarModalOpen(value)
-    }
-
-    const updateLabelsCard = (e,value) => {
-        const newList = {...props.list};
-        const cards = newList.cards;
-        if(!cards[cardToSave.id].color.includes(value)){
-            cards[cardToSave.id].color = [...cards[cardToSave.id].color, value]
-        }
-
         dispatch(saveList(newList))
     }
 
@@ -75,25 +61,6 @@ export const CardModal = (props) => {
         delete cards[cardToSave.id]
         dispatch(saveList(newList))
         props.setIsOpenModal(false)
-    }
-
-     const watchCard = (e) => {
-        const newList = {...props.list};
-        const cards = newList.cards
-        cards[cardToSave.id].isWatch = !cards[cardToSave.id].isWatch
-        dispatch(saveList(newList))
-    }
-
-    const addCheckList = (title) => {
-        const newList = {...props.list};
-        const cards = newList.cards;
-        const checkList = {
-            id:utilService.makeId(),
-            title,
-            tasks:[]
-        }
-        cards[cardToSave.id].checkLists.push(checkList);
-        dispatch(saveList(newList))
     }
 
     const addTaskToCheckList = (e,checkListId) => {
@@ -110,7 +77,7 @@ export const CardModal = (props) => {
             title:newTaskTitleToAdd,
             isDone: false
         }
-        cardCheckLists[checkListToUpdateIdx].tasks.push(taskToAdd)
+        cardCheckLists[checkListToUpdateIdx].tasks[taskToAdd.id] = taskToAdd;
         dispatch(saveList(newList))
 
     }
@@ -127,12 +94,6 @@ export const CardModal = (props) => {
 
         removeCard(null,cardToSave.id)
 
-        console.log('e.target.value', e.target.value);
-        console.log('lists', lists);
-        console.log('newListId', newListId);
-        // const newListIdx = lists.findIndex(list => {
-        //     return list._id === newListId
-        // })
         const newList = lists[newListId];
         newList.cards = {...newList.cards,[cardToSave.id]:cardToSave};
         dispatch(saveList(newList))
@@ -160,63 +121,15 @@ export const CardModal = (props) => {
                     <label className="title-modal-label"><i className="fas fa-laptop"></i> Title</label>
                     <div className="title-modal">{props.card.title}</div>
                 </div>
-                <div className="card-list">In list
-                    <select className="card-list-select" name="card-list" onChange={changeCardList} value={cardToSave.currList}>
-                        {Object.keys(lists).map((listIdx) =>
-                            <option key={listIdx} value={lists[listIdx]._id}>{lists[listIdx].title}</option>
-                        )}
-                    </select>
-                </div>
+                <CardListChange changeCardList={changeCardList} cardToSave={cardToSave} lists={lists}/>
                 <section className="main-container">
                     <main className="container">
-                        <div className="description-container item-container">
-                            <label htmlFor="description"> <span><i className="fas fa-align-right"></i> </span> Description</label>
-                            <main>
-                                <textarea name="description"  id="description" cols="30" rows="10" placeholder="Description..." value={cardToSave.description} onChange={((e) => changeCardDetails(e))}></textarea>
-                                <button className="save-button save-button-trello" onClick={((e) => updateCard(e,cardToSave))} >SAVE</button>
-                            </main>
-                        </div>
+                        <CardDescription cardToSave={cardToSave} changeCardDetails={changeCardDetails} updateCard={updateCard}/>
                         {cardToSave.checkLists.map((checkList,idx) =>
-                            <div key={idx} className="checkLists-container item-container">
-                                <header>
-                                    <label htmlFor="checkList"> <span> <i className="far fa-calendar-check"></i></span> {checkList.title}</label>
-                                    <button className="delete-checkList">DELETE</button>
-                                </header>
-                                <div className="check-list-result">
-                                    <div className="percentage"> 100 %</div>
-                                    <div className="graph"></div>
-                                </div>
-                                <div className="tasks-list">
-                                    {checkList.tasks.map((task) =>
-                                        <div className="task" key={task.id}>
-                                            <div className="task-info">
-                                                <input type="checkBox" onChange={((e) => updateTaskDone(e,checkList.id,task.id))}/>
-                                                <div className="task-title">{task.title}</div>
-                                            </div>
-                                            <div className="helpers">
-                                                <button><i className="far fa-clock"></i></button>
-                                                <button><i className="far fa-user"></i></button>
-                                                <button><i className="fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                                <div className="add-task">
-                                    <input type="text" placeholder="Add new task..." onChange={updateNewTaskTitle}/>
-                                    <button className="add-task-button" onClick={((e) => addTaskToCheckList(e,checkList.id))}>Add task</button>
-                                </div>
-                            </div>
+                            <CheckLists checkList={checkList} key={idx} updateTaskDone={updateTaskDone} addTaskToCheckList={addTaskToCheckList} updateNewTaskTitle={updateNewTaskTitle}/>
                         )}
                     </main>
-                    <div className="side-bar">
-                        <header className="side-bar-title">ADD TO CARD</header>
-                        <div className="labels item" onClick={((e) => openSideBarModal(e,'labels'))}><i className="fas fa-tag"></i> labels </div>
-                        {whichSideBarModalOpen === 'labels' && <LabelsModal sideBarModalRef={sideBarModalRef}  updateLabelsCard={updateLabelsCard} />}
-                        <div className="watch item" onClick={watchCard}><i className="far fa-eye"></i> Watch </div>
-                        <div className="todo-list item" onClick={((e) => openSideBarModal(e,'checkList'))}><i className="far fa-calendar-check"></i> Checklist </div>
-                        {whichSideBarModalOpen === 'checkList' && <CheckListModal sideBarModalRef={sideBarModalRef} addCheckList={addCheckList} />}
-                        <div className="delete item" onClick={removeCard}><i className="far fa-trash-alt"></i> Delete Card </div>
-                    </div>
+                        <CardSideBar removeCard={removeCard} cardToSave={cardToSave} whichSideBarModalOpen={whichSideBarModalOpen} setWhichSideBarModalOpen={setWhichSideBarModalOpen} list={props.list}/>
                 </section>
             </div>
         </section>

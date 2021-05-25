@@ -1,0 +1,29 @@
+.side-bar{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .item{
+          cursor: pointer;
+          background-color: rgba(9,30,66,.04);
+          border: none;
+          border-radius: 3px;
+          margin-top: 8px;
+          padding: 6px 12px;
+          color: #172b4d;
+          font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+          font-size: 14px;
+          transition: all 0.2s ease-in-out;
+          height: 32px;
+        }
+        .item:hover{
+          background-color: rgba(9,30,66,.08);
+        }
+        .delete{
+          background-color: #ff000014;
+          transition: all 0.2s ease-in-out;
+        }
+        .delete:hover{
+          background-color: #ff00002e;
+        }
+      }
