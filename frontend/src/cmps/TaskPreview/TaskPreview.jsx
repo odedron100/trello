@@ -6,6 +6,7 @@ export const TaskPreview = (props) => {
 
     return (
         <div className="task" key={props.task.id}>
+            {console.log('props.task',props.task )}
             <div className="task-info">
                 {console.log('props.task.isDone', props.task.isDone)}
                 { props.task.isDone ? <input type="checkBox" checked onChange={((e) => props.updateTaskDone(e,props.checkList.id,props.task.id))}/> :

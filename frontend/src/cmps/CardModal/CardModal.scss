@@ -28,6 +28,8 @@
       display: flex;
       main{
         flex: 3;
+        overflow-y: auto;
+        height: 485px;
       }
     }
   }

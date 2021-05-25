@@ -121,15 +121,15 @@ export const CardModal = (props) => {
                     <label className="title-modal-label"><i className="fas fa-laptop"></i> Title</label>
                     <div className="title-modal">{props.card.title}</div>
                 </div>
-                <CardListChange changeCardList={changeCardList} cardToSave={cardToSave} lists={lists}/>
+                <CardListChange changeCardList={changeCardList} cardToSave={props.list.cards[cardToSave.id]} lists={lists}/>
                 <section className="main-container">
                     <main className="container">
-                        <CardDescription cardToSave={cardToSave} changeCardDetails={changeCardDetails} updateCard={updateCard}/>
-                        {cardToSave.checkLists.map((checkList,idx) =>
+                        <CardDescription cardToSave={props.list.cards[cardToSave.id]} changeCardDetails={changeCardDetails} updateCard={updateCard}/>
+                        {props.list.cards[cardToSave.id].checkLists.map((checkList,idx) =>
                             <CheckLists checkList={checkList} key={idx} updateTaskDone={updateTaskDone} addTaskToCheckList={addTaskToCheckList} updateNewTaskTitle={updateNewTaskTitle}/>
                         )}
                     </main>
-                        <CardSideBar removeCard={removeCard} cardToSave={cardToSave} whichSideBarModalOpen={whichSideBarModalOpen} setWhichSideBarModalOpen={setWhichSideBarModalOpen} list={props.list}/>
+                        <CardSideBar removeCard={removeCard} cardToSave={props.list.cards[cardToSave.id]} whichSideBarModalOpen={whichSideBarModalOpen} setWhichSideBarModalOpen={setWhichSideBarModalOpen} list={props.list}/>
                 </section>
             </div>
         </section>

@@ -29,7 +29,7 @@ export const CheckLists = (props) => {
             sum ++
         }
     });
-    const width = (sum / numberOfTasks * 100) + '%';
+    const width = Math.floor((sum / numberOfTasks * 100)) + '%';
     return width
 }
 
