@@ -9,7 +9,7 @@ export const CardDescription = (props) => {
             <label htmlFor="description"> <span><i className="fas fa-align-right"></i> </span> Description</label>
             <main>
                 <textarea name="description"  id="description" cols="30" rows="10" placeholder="Description..." value={props.cardToSave.description} onChange={((e) => props.changeCardDetails(e))}></textarea>
-                <button className="save-button save-button-trello" onClick={((e) => props.updateCard(e,props.cardToSave))} >SAVE</button>
+                <button className="save-button submit-button-trello" onClick={((e) => props.updateCard(e,props.cardToSave))} >SAVE</button>
             </main>
         </div>
     )

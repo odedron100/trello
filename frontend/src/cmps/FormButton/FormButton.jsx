@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { CloseModals } from '../CloseModals/CloseModals';
 import './FormButton.scss'
 
 export const FormButton = (props) => {

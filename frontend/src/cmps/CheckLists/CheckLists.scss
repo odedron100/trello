@@ -42,4 +42,35 @@
               border-radius: 30px;
             }
           }
+          .add-task{
+            margin-inline-start: 40px;
+            margin-top: 15px;
+            .add-task-modal-button{
+                background-color: rgba(9,30,66,.04);
+                color: #172b4d;
+                padding: 8px 12px;
+                font-size: 14px;
+                transition: all 0.2s;
+            }
+            .add-task-modal{
+              display: flex;
+              flex-direction: column;
+              textarea{
+                width: 100%;
+                height: 76px;
+                box-shadow: inset 0 0 0 2px #0079bf;
+                padding: 8px;
+                color: #172b4d;
+                cursor: text;
+                font-size: 16px;
+              }
+              textarea::placeholder{
+                color: #172b4d;
+                cursor: text;
+              }
+              .add-task-button{
+                width: 75px;
+              }
+            }
+          }
         }

@@ -5,10 +5,13 @@ import {FormButton} from '../FormButton'
 import { useDispatch } from 'react-redux';
 import {saveList ,loadLists} from '../../store/actions/ListActions'
 import { CardModal } from '../CardModal/CardModal';
+import { CardList } from '../CardList/CardList';
+import { HelpersModal } from '../HelpersModal/HelpersModal';
 
 export const List = ({list}) => {
     const [currCard,setCurrCard] = useState(null);
     const [isOpenModal,setIsOpenModal] = useState(false);
+    const [isOpenHelpersModal,setIsOpenHelpersModal] = useState(false);
     const editRef = useRef(null);
     const dispatch = useDispatch();
     useEffect(() => {
@@ -37,34 +40,20 @@ export const List = ({list}) => {
         setCurrCard(card);
     }
 
+    const openHelpersModal = () => {
+        setIsOpenHelpersModal(true)
+    }
+
     const cards = list.cards;
     return (
         <section className="list">
             <header>
                 <div className="title">{list.title}</div>
-                <div className="helpers"><i className="fas fa-ellipsis-h"></i></div>
+                <div className="helpers" onClick={openHelpersModal}><i className="fas fa-ellipsis-h"></i></div>
+                {isOpenHelpersModal && <HelpersModal list={list} setIsOpenModal={setIsOpenModal} setIsOpenHelpersModal={setIsOpenHelpersModal} isOpenHelpersModal={isOpenHelpersModal}/>}
             </header>
-            <section className="cards">
-                {console.log('cards', cards)}
-                {Object.keys(cards).map((cardId) => {
-                    return(
-                        <section key={cardId} className="card" onClick={((e) => openModal(e, cards[cardId]))}>
-                            <div className="card-labels">
-                                {cards[cardId].color.map((label) =><div className="card-label" key={label} style={{backgroundColor: label}}></div>)}
-                            </div>
-                            <div className="main-card">
-                                <div>{cards[cardId].title}</div>
-                                <span><i className="far fa-edit" ref={editRef}></i></span>
-                            </div>
-                            <footer>
-                                {cards[cardId].description && <div className="card-description"> <i className="fas fa-align-right"></i> </div>}
-                                {cards[cardId].isWatch && <div className="card-isWatch"> <i className="far fa-eye"></i> </div>}
-                            </footer>
-                        </section>
-                    )
-                })}
-            </section>
-            <FormButton itemType="card" onSubmit={handleNewCardSubmit} />
+            <CardList cards={cards} editRef={editRef} openModal={openModal}/>
+            <FormButton itemType="card" onSubmit={handleNewCardSubmit}/>
             {isOpenModal && <CardModal card={currCard} list={list} setIsOpenModal={setIsOpenModal} />}
         </section>
     )
