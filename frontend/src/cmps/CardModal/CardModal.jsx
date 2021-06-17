@@ -1,4 +1,4 @@
-import { useRef,useEffect,useCallback, useState } from 'react';
+import { useRef,useState } from 'react';
 import {saveList} from '../../store/actions/ListActions';
 import './CardModal.scss';
 import { useDispatch,useSelector } from 'react-redux';
@@ -14,13 +14,15 @@ export const CardModal = (props) => {
     const cardModalContaiinerRef = useRef(null);
     const cardModalRef = useRef(null);
     const [cardToSave,setCardToSave] = useState(props.card);
-    const [newTaskTitleToAdd,setNewTaskTitleToAdd] = useState(null)
+    const [newTaskTitleToAdd,setNewTaskTitleToAdd] = useState('')
     const [whichSideBarModalOpen,setWhichSideBarModalOpen] = useState('');
     const lists = useSelector(state => state.listReducer.lists)
 
     const changeCardDetails = (e) => {
         const type = e.target.name
         const value = e.target.value
+        console.log('type',type );
+        console.log('value', value);
             setCardToSave({...cardToSave, [type]: value})
     }
 
@@ -40,6 +42,8 @@ export const CardModal = (props) => {
     }
 
     const addTaskToCheckList = (e,checkListId) => {
+        if(!newTaskTitleToAdd || newTaskTitleToAdd === '') return;
+
         const newList = {...props.list};
         const cards = newList.cards;
         const cardCheckLists = cards[cardToSave.id].checkLists
@@ -90,6 +94,20 @@ export const CardModal = (props) => {
         dispatch(saveList(newList))
     }
 
+    const removeCheckList = (checkListId) => {
+        const newList = {...props.list};
+        const cards = newList.cards;
+        let cardCheckLists = cards[cardToSave.id].checkLists
+
+        const checkListToUpdateIdx = cardCheckLists.findIndex(checkListFromArray => {
+            return checkListFromArray.id === checkListId
+        })
+
+        cardCheckLists.splice(checkListToUpdateIdx,1)
+
+        dispatch(saveList(newList))
+    }
+
     return (
         <section className="card-modal-container" ref={cardModalContaiinerRef}>
             <div className="card-modal" ref={cardModalRef}>
@@ -102,7 +120,8 @@ export const CardModal = (props) => {
                     <main className="container">
                         <CardDescription cardToSave={props.list.cards[cardToSave.id]} changeCardDetails={changeCardDetails} updateCard={updateCard}/>
                         {props.list.cards[cardToSave.id].checkLists.map((checkList,idx) =>
-                            <CheckLists checkList={checkList} key={idx} updateTaskDone={updateTaskDone} addTaskToCheckList={addTaskToCheckList} updateNewTaskTitle={updateNewTaskTitle} newTaskTitleToAdd={newTaskTitleToAdd}/>
+                            <CheckLists checkList={checkList} key={idx} updateTaskDone={updateTaskDone} addTaskToCheckList={addTaskToCheckList}
+                             updateNewTaskTitle={updateNewTaskTitle} newTaskTitleToAdd={newTaskTitleToAdd} removeCheckList={removeCheckList}/>
                         )}
                     </main>
                         <CardSideBar removeCard={removeCard} cardToSave={props.list.cards[cardToSave.id]} whichSideBarModalOpen={whichSideBarModalOpen} setWhichSideBarModalOpen={setWhichSideBarModalOpen} list={props.list}/>

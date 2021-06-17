@@ -43,12 +43,18 @@ export const CardSideBar = (props) => {
         dispatch(saveList(newList))
     }
 
+    const newList = {...props.list};
+    const cards = newList.cards;
+    const isWatch = cards[props.cardToSave.id].isWatch ? 'inline-block' : 'none';
     return (
         <div className="side-bar">
             <header className="side-bar-title">ADD TO CARD</header>
             <div className="labels item" onClick={((e) => openSideBarModal(e,'labels'))}><i className="fas fa-tag"></i> labels </div>
             {props.whichSideBarModalOpen === 'labels' && <LabelsModal sideBarModalRef={sideBarModalRef}  updateLabelsCard={updateLabelsCard} />}
-            <div className="watch item" onClick={watchCard}><i className="far fa-eye"></i> Watch </div>
+            <div className="watch item" onClick={watchCard}>
+                <span><i className="far fa-eye"></i> Watch </span>
+                <span style={{display:isWatch}}><i className="far fa-check-square"></i></span>
+            </div>
             <div className="todo-list item" onClick={((e) => openSideBarModal(e,'checkList'))}><i className="far fa-calendar-check"></i> Checklist </div>
             {props.whichSideBarModalOpen === 'checkList' && <CheckListModal sideBarModalRef={sideBarModalRef} addCheckList={addCheckList} />}
             <div className="delete item" onClick={props.removeCard}><i className="far fa-trash-alt"></i> Delete Card </div>
