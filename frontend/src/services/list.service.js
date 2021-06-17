@@ -1,5 +1,6 @@
 // import { utilService } from "./util.service";
 import { httpService } from './http.service.js';
+const backgroundImgs = require('../../data/boardBackground.json');
 // import { storageService } from "./async-storage.service.js";
 
 const KEY = 'listDB';

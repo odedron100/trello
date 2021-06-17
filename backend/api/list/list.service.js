@@ -19,13 +19,11 @@ async function query(filterBy = {}) {
         const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('list')
         const lists = await collection.find(criteria).toArray();
-        console.log('lists', lists);
         const listsAsObject = lists.reduce((result, current) => {
             result[current._id] = current;
             return result;
         }, {});
 
-        console.log('listsAsObject', listsAsObject);
         return listsAsObject;
     } catch (err) {
         console.log('err', err);
@@ -95,7 +93,7 @@ async function update(list) {
 async function add(list) {
     const listToSave = {
         title: list.title,
-        cards: {}
+        cards: list.cards || {}
     }
     const collection = await dbService.getCollection('list')
     await collection.insertOne(listToSave)

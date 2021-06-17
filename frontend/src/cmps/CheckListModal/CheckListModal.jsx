@@ -9,6 +9,7 @@ export const CheckListModal = (props) => {
     }
 
     const handleAddCheckList = () => {
+        if(!checkListTitle) return;
         props.addCheckList(checkListTitle)
     }
 

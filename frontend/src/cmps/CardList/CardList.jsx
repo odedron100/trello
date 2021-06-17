@@ -9,7 +9,7 @@ export const CardList = (props) => {
          <section className="card-list">
                 {Object.keys(props.cards).map((cardId) => {
                     return(
-                        <CardPreview cards={props.cards} cardId={cardId} editRef={props.editRef} openModal={props.openModal}/>
+                        <CardPreview key={cardId} cards={props.cards} cardId={cardId} editRef={props.editRef} openModal={props.openModal}/>
                     )
                 })}
             </section>

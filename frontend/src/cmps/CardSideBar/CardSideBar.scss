@@ -19,6 +19,10 @@
         .item:hover{
           background-color: rgba(9,30,66,.08);
         }
+        .watch{
+          display: flex;
+          justify-content: space-between;
+        }
         .delete{
           background-color: #ff000014;
           transition: all 0.2s ease-in-out;

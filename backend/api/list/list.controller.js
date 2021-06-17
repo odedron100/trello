@@ -52,7 +52,6 @@ async function addList(req, res) {
     try {
         const list = req.body;
         const savedList = await listService.add(list)
-        console.log('savedList', savedList);
         res.send(savedList)
     } catch (err) {
         logger.error('Failed to add list', err)

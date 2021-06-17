@@ -1,0 +1,62 @@
+.board-menu-container {
+  display: flex;
+  position: absolute;
+  right: -300px;
+  .board-menu-modal{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    padding: 5px 20px;
+    width: 400px;
+    height: 92vh;
+    background-color: white;
+    transform: translateX(700px);
+    pointer-events: none;
+    transition: 0.5s opacity ease-in-out, 0.5s transform ease-in-out;
+    opacity: 0;
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid rgba(9,30,66,.13);
+      width: 100%;
+      .close-menu{
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+      }
+      .title{
+        line-height: 20px;
+        margin: 14px 32px;
+      }
+    }
+    main{
+      .item{
+        cursor: pointer;
+        padding: 5px;
+        transition: hover 0.3s;
+      }
+      .item:hover{
+          background-color: rgba(9,30,66,.08);
+      }
+    }
+  }
+  .visible{
+    opacity: 1;
+    transform: translateX(-300px);
+    pointer-events: all;
+  }
+  .board-menu-button{
+    min-width: 32px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-inline-end: 10px;
+    padding: 10px;
+    cursor: pointer;
+    .close-menu{
+      display: flex;
+    }
+  }
+}

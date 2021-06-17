@@ -14,11 +14,16 @@
       display: flex;
       justify-content: space-between;
       padding: 5px 8px;
+      .edit-title{
+        width: 89%;
+        height: 28px;
+      }
       .helpers{
         cursor: pointer;
       }
       .title{
         font-weight: 700;
+        cursor: pointer;
       }
     }
     .create-new-card{

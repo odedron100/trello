@@ -1,12 +1,11 @@
 const INITIAL_STATE = {
   lists: {},
-  currList: null
+  currList: null,
 }
 
 export function listReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'SET_LISTS':
-      console.log('SET_LISTS action.lists', action.lists);
       return {
         ...state,
         lists: { ...action.lists }
@@ -20,7 +19,6 @@ export function listReducer(state = INITIAL_STATE, action) {
       return {
         ...state,
         lists: { ...state.lists, [action.list._id]: { ...action.list } }
-        // lists: [...state.lists, action.list]
       }
     case 'REMOVE_LIST':
       const newListsObject = { ...state.lists };

@@ -1,5 +1,4 @@
-
-
+import { BoardMenu } from '../BoardMenu/BoardMenu'
 import './AppHeader.scss'
 
 export const AppHeader = (props) => {
@@ -23,7 +22,9 @@ export const AppHeader = (props) => {
                     <div className="acount header-button"><i className="fas fa-user-alt"></i></div>
                 </div>
             </header>
-            <footer></footer>
+            <footer>
+                <BoardMenu/>
+            </footer>
         </section>
     )
 }
