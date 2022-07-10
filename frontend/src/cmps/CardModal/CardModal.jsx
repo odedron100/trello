@@ -1,5 +1,5 @@
 import { useRef,useState } from 'react';
-import {saveList} from '../../store/actions/ListActions';
+import {saveBoard} from '../../store/actions/BoardActions';
 import './CardModal.scss';
 import { useDispatch,useSelector } from 'react-redux';
 import { utilService } from '../../services/util.service';
@@ -30,14 +30,14 @@ export const CardModal = (props) => {
         const newList = {...props.list};
         const cards = newList.cards;
         cards[cardToSave.id] = cardToSave
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     const removeCard = (e) => {
         const newList = {...props.list};
         const cards = newList.cards
         delete cards[cardToSave.id]
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
         props.setIsOpenModal(false)
     }
 
@@ -58,7 +58,7 @@ export const CardModal = (props) => {
             isDone: false
         }
         cardCheckLists[checkListToUpdateIdx].tasks[taskToAdd.id] = taskToAdd;
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
         setNewTaskTitleToAdd('');
     }
 
@@ -76,7 +76,7 @@ export const CardModal = (props) => {
 
         const newList = lists[newListId];
         newList.cards = {...newList.cards,[cardToSave.id]:cardToSave};
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     const updateTaskDone = (e,checkListId,taskId) => {
@@ -91,7 +91,7 @@ export const CardModal = (props) => {
         const currTaskIsDone = cardCheckLists[checkListToUpdateIdx].tasks[taskId].isDone;
 
         cardCheckLists[checkListToUpdateIdx].tasks[taskId].isDone = !currTaskIsDone
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     const removeCheckList = (checkListId) => {
@@ -105,7 +105,7 @@ export const CardModal = (props) => {
 
         cardCheckLists.splice(checkListToUpdateIdx,1)
 
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     return (

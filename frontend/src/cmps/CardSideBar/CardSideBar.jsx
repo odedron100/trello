@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { LabelsModal } from '../LabelsModal';
 import { CheckListModal } from '../CheckListModal/CheckListModal';
 import { utilService } from '../../services/util.service';
-import {saveList} from '../../store/actions/ListActions';
+import {saveBoard} from '../../store/actions/BoardActions';
 import { useDispatch } from 'react-redux';
 import './CardSideBar.scss'
 
@@ -21,14 +21,14 @@ export const CardSideBar = (props) => {
             cards[props.cardToSave.id].color = [...cards[props.cardToSave.id].color, value]
         }
 
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
      const watchCard = (e) => {
         const newList = {...props.list};
         const cards = newList.cards
         cards[props.cardToSave.id].isWatch = !cards[props.cardToSave.id].isWatch
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     const addCheckList = (title) => {
@@ -40,7 +40,7 @@ export const CardSideBar = (props) => {
             tasks:{}
         }
         cards[props.cardToSave.id].checkLists.push(checkList);
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     const newList = {...props.list};

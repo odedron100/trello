@@ -2,22 +2,23 @@ import './List.scss'
 import {utilService} from '../../services/util.service';
 import { useEffect,useState,useRef } from 'react';
 import {FormButton} from '../FormButton'
-import { useDispatch } from 'react-redux';
-import {saveList ,loadLists} from '../../store/actions/ListActions'
+import { useDispatch, useSelector } from 'react-redux';
+import {saveBoard ,loadBoards} from '../../store/actions/BoardActions'
 import { CardModal } from '../CardModal/CardModal';
 import { CardList } from '../CardList/CardList';
 import { HelpersModal } from '../HelpersModal/HelpersModal';
 
-export const List = ({list}) => {
+export const List = ({lists,list}) => {
     const [currCard,setCurrCard] = useState(null);
     const [isOpenModal,setIsOpenModal] = useState(false);
     const [isOpenHelpersModal,setIsOpenHelpersModal] = useState(false);
     const [isEditListTitle,setIsEditListTitle] = useState(false);
     const [newListTitle,setNewListTitle] = useState(list.title);
     const editRef = useRef(null);
+    const board = useSelector(state => state.BoardReducer.currBoard)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(loadLists())
+        dispatch(loadBoards())
     }, []);
 
     document.addEventListener('keydown',(e) => {
@@ -38,8 +39,9 @@ export const List = ({list}) => {
             currList: list._id,
             checkLists:[]
         }
-        let listToSave = {...list,cards:{...list.cards,[cardId]:newCard}}
-        dispatch(saveList(listToSave))
+        let boardToSave = {...board,lists:{...list,cards:{...list.cards,[cardId]:newCard}}}
+        console.log('boardToSave', boardToSave);
+        dispatch(saveBoard(boardToSave))
     }
 
     const openModal = (e,card) => {
@@ -62,9 +64,8 @@ export const List = ({list}) => {
 
     const updateListTitle = () => {
         const newList = {...list, title:newListTitle}
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
-
     const cards = list.cards;
     return (
         <section className="list">
@@ -74,7 +75,7 @@ export const List = ({list}) => {
                 <div className="helpers" onClick={openHelpersModal}><i className="fas fa-ellipsis-h"></i></div>
                 {isOpenHelpersModal && <HelpersModal list={list} setIsOpenModal={setIsOpenModal} setIsOpenHelpersModal={setIsOpenHelpersModal} isOpenHelpersModal={isOpenHelpersModal}/>}
             </header>
-            <CardList cards={cards} editRef={editRef} openModal={openModal}/>
+            {cards &&<CardList cards={cards} editRef={editRef} openModal={openModal}/>}
             <FormButton itemType="card" onSubmit={handleNewCardSubmit}/>
             {isOpenModal && <CardModal card={currCard} list={list} setIsOpenModal={setIsOpenModal} />}
         </section>

@@ -1,4 +1,4 @@
-import {removeList, saveList} from '../../store/actions/ListActions'
+import {removeboard, saveBoard} from '../../store/actions/BoardActions'
 import { useDispatch } from 'react-redux';
 import './HelpersModal.scss'
 import { useCallback, useEffect, useRef } from 'react';
@@ -32,8 +32,8 @@ export const HelpersModal = (props) => {
         }
     });
 
-    const onRemoveList = () => {
-        dispatch(removeList(props.list._id))
+    const onRemoveBoardremoveboard = () => {
+        dispatch(removeboard(props.list._id))
     }
 
     const onCopyList = () => {
@@ -43,13 +43,13 @@ export const HelpersModal = (props) => {
         //     delete newList.cards[cardId].id;
         // })
         console.log('newList', newList);
-        dispatch(saveList(newList))
+        dispatch(saveBoard(newList))
     }
 
     return (
        <div className="helpers-modal" ref={helperModalRef}>
             <div className="modal-helpers-header">List Helpers...</div>
-            <div className="remove-list item" onClick={onRemoveList}>Remove list</div>
+            <div className="remove-list item" onClick={onRemoveBoardremoveboard}>Remove list</div>
             <div className="copy-list item" onClick={onCopyList}>Copy list</div>
         </div>
     )

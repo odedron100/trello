@@ -1,10 +1,9 @@
-
-
 import { CardPreview } from '../CardPreview/CardPreview'
 import './CardList.scss'
 
 export const CardList = (props) => {
 
+    console.log('props.cards', props.cards);
     return (
          <section className="card-list">
                 {Object.keys(props.cards).map((cardId) => {

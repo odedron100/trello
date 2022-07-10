@@ -1,21 +1,23 @@
 import { useEffect } from 'react';
-import { listService } from '../../services/list.service'
-import { useDispatch } from 'react-redux';
-import { loadLists, saveList } from '../../store/actions/ListActions'
+import { boardService } from '../../services/board.service'
+import { useDispatch, useSelector } from 'react-redux';
+import { loadBoards, saveBoard } from '../../store/actions/BoardActions'
 import {FormButton} from '../FormButton'
 
 import './NewListButton.scss'
 
 export const NewListButton = (props) => {
-
+    const board = useSelector(state => state.BoardReducer.currBoard)
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(loadLists())
+        dispatch(loadBoards())
     }, []);
 
     const onAddNewList = (newList) => {
-        dispatch(saveList({...listService.getEmptyList(), ...newList }))
+        const newListFromService = boardService.getEmptyList();
+        newListFromService.title = newList.title;
+        dispatch(saveBoard({...board, lists:{...board.lists, ...newListFromService, ...newList }}))
     }
 
     return (
